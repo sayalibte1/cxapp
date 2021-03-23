@@ -45,7 +45,7 @@ export default (
            <Grid records:bind='$page.records'
       style={{width: "100%"}}
       columns={[
-      { header: 'Name', field: 'fullName', sortable: true,  tpl: '{$page.newData.fullName} ' },
+      { header: 'Name', field: 'fullName', sortable: true, field:"fullName" ,tpl: '{$page.records.fullName} ' },
       { header: 'Age',  field: 'age', sortable: true,  tpl: '{$page.newData.age} ' },
       { header: 'city', field: 'city', sortable: true,  tpl: '{$page.newData.city} ' },
       { header: 'Cold status', field: 'cold', sortable: true, 
