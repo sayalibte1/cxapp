@@ -3,7 +3,8 @@ import {Route, PureContainer, Sandbox} from "cx/widgets";
 import AppLayout from "../layout";
 import Default from "./default";
 import About from "./about";
-import Test from "./test"
+import Test from "./test";
+import Add from "./add"
 
 export default <cx>
     <PureContainer outerLayout={AppLayout}>
@@ -16,6 +17,9 @@ export default <cx>
             </Route>
             <Route url-bind="url" route="~/test">
                 <Test />
+            </Route>
+            <Route url-bind="url" route="~/add">
+                <Add />
             </Route>
             
         </Sandbox>
